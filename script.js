@@ -15,9 +15,9 @@ fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey="+key)
 		zmienna3 = (Math.round(zmienna3 * 100) / 100).toFixed(2);
         div_kursy.innerHTML = `
         Kurs || Kwota<br>
-        USD = ${zmienna1} || `+(Math.round((Number(input_wartosc.value)/Number(zmienna1)) * 100) / 100).toFixed(2)+`USD<br>
-        EUR = ${zmienna2} || `+(Math.round((Number(input_wartosc.value)/Number(zmienna2)) * 100) / 100).toFixed(2)+`EUR<br>
-        GBP = ${zmienna3} || `+(Math.round((Number(input_wartosc.value)/Number(zmienna3)) * 100) / 100).toFixed(2)+`GBP
+        1 USD = ${zmienna1} zł || `+input_wartosc.value+` zł = `+(Math.round((Number(input_wartosc.value)/Number(zmienna1)) * 100) / 100).toFixed(2)+`USD<br>
+        1 EUR = ${zmienna2} zł || `+input_wartosc.value+` zł = `+(Math.round((Number(input_wartosc.value)/Number(zmienna2)) * 100) / 100).toFixed(2)+`EUR<br>
+        1 GBP = ${zmienna3} zł || `+input_wartosc.value+` zł = `+(Math.round((Number(input_wartosc.value)/Number(zmienna3)) * 100) / 100).toFixed(2)+`GBP
 
         `
 
